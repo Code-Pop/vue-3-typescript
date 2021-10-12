@@ -19,5 +19,7 @@ const appInfo: AppInfo = reactive({
     <h1>{{ appInfo.name }}</h1>
     <h2>{{ appInfo.slogan }}</h2>
   </div>
-  <Counter></Counter>
+  <Counter 
+    :limit="10"
+  ></Counter>
 </template>
