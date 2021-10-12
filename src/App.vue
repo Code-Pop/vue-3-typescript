@@ -1,17 +1,7 @@
 <template>
-	<div>
-	  <p>{{ count }}</p>
-	  <button @click="reset">Reset</button>
-	</div>
+  <img alt="Vue logo" src="./assets/logo.png" />
 </template>
 
-<script setup lang="ts">
-import useAutoCount from './composables/useAutoCount'
-
-const { count } = useAutoCount(0)
-
-function reset() {
-  count.value = 0
-}
-
+<script lang="ts">
 </script>
+
