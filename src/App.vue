@@ -5,19 +5,13 @@
 	</div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import useAutoCount from './composables/useAutoCount'
 
-export default {
-  name: 'App',
-  setup() {
-    const { count } = useAutoCount(0)
+const { count } = useAutoCount(0)
 
-    function reset() {
-      count.value = 0
-    }
-
-    return { count, reset }
-  }
+function reset() {
+  count.value = 0
 }
+
 </script>
